@@ -35,14 +35,13 @@ mocha: {
     // Test files
     src: [ 'example/test/test2.html' ],
     options: {
-      // Bail means if a test fails, grunt will abort. False by default.
-      bail: true,
-
       // Pipe output console.log from your JS to grunt. False by default.
       log: true,
 
       // mocha options
       mocha: {
+        // Bail means if a test fails, grunt will abort. False by default.
+        bail: true,
         ignoreLeaks: false,
         grep: 'food'
       },
